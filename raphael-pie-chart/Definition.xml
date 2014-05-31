@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="Raphael Pie Chart">
+	<Dimension Label="Country:" Initial="" DropTarget="Country"/>
+	<Measurement Label="Sales Expr:" Initial=""	Expression="Sum(Sales)" />
+	<Initiate Name="Caption.Text" Value="Raphael Pie Chart"/>
+</ExtensionObject>

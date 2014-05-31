@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="HTML Table with Data and Events">
+	<Dimension Initial="" /> 
+    <Measurement Initial="" /> 
+
+     <Initiate Name="Caption.Text" value="HTML Basic Table" /> 
+</ExtensionObject>
