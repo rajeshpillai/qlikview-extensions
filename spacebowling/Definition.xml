@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExtensionObject Label="Space Bowling">
+	<Dimension/>
+	<Measurement />
+	<Initiate Name="Caption.Text" Value="Space Bowling"/>
+</ExtensionObject>
