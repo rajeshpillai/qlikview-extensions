@@ -36,6 +36,7 @@ Qva.AddExtension('tekacademy/d3-force-directed', function() {
         var w = 500,
         h = 500,
         z = d3.scale.category20();
+        
         var force = d3.layout.force()
             .size([w, h]);
 
@@ -79,33 +80,6 @@ Qva.AddExtension('tekacademy/d3-force-directed', function() {
     }
      
     var dataURL = Qva.Remote + "?public=only&name=Extensions/tekacademy/d3-force-directed/flare.json";
-
-    //alert($.fn.jquery);
-    /*
-    alert(dataURL);
-    $.getJSON(dataURL).done(function( data ) {
-        alert(data);
-    }).fail(function(jqXHR,e){
-        alert(jqXHR.statusText);
-    });
-
-    $.ajax({
-          type: "get",
-          url : dataURL,
-          dataType: "json",
-          async :   false,
-          success: function(data, textStatus, jqXHR){
-            html += "<p>"+data+"</p>";
-            alert(data);
-          },
-          error: function(XMLHttpRequest,textStatus, errorThrown){
-            alert("error : " + textStatus + "\n" + errorThrown);
-          }
-      });
- 
-    */
-
-
 
     function flatten(root) { // <-A
       var nodes = [];
