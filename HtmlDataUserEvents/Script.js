@@ -14,7 +14,6 @@ Qva.AddExtension('tekacademy/HtmlDataUserEvents', function() {
     for (var i = 0; i < this.Data.Rows.length; i++) { 
         // get the row 
         var row = this.Data.Rows [i];
-
         // Generate html 
         html += "<tr><td onclick='ontekrowclick("+i+")'>" + row[0].text + "</td><td onclick='oncvlrowclick("+i+")'>" + row[1].text + "</td></tr>"; 
     }

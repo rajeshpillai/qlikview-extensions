@@ -32,10 +32,14 @@ Qva.AddExtension('tekacademy/spacebowling', function() {
       _this.Element.appendChild(game);
 
 
-      var gameUI = document.getElementById("gameUI");
+      /*var gameUI = document.getElementById("gameUI");
       gameUI = gameUI || document.createElement("div");
       gameUI.setAttribute("id","gameUI");
       game.appendChild(gameUI);
+      */
+
+      $(game).append("div").attr("id","gameUI");
+
 
       var gameIntro = document.getElementById("gameIntro");
       gameIntro = gameIntro || document.createElement("div");
@@ -58,8 +62,6 @@ Qva.AddExtension('tekacademy/spacebowling', function() {
       gamePlay = gamePlay || document.createElement("div");
       gamePlay.setAttribute("id","gamePlay");
       game.appendChild(gamePlay);
-
-      //<a id="gamePlay" class="button" href="">Play</a>
 
     $(game).append("a").attr("id","gamePlay").addClass("button").attr("href","");
     $(game).append("<a href='' id='gamePlay' class='button'>Play</a>");
