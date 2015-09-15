@@ -23,7 +23,6 @@ Qva.AddExtension('tekacademy/game-final', function() {
         flag = true;
         console.log(gameLevel);
         startGame (gameLevel);
-
     });
   }
 
@@ -41,8 +40,7 @@ Qva.AddExtension('tekacademy/game-final', function() {
     canvas.height = h;
 
     ctx = canvas.getContext('2d');
-   
-    drawGame();
+    setInterval(drawGame,1000);
   }
 
   function drawGame(){
@@ -53,7 +51,7 @@ Qva.AddExtension('tekacademy/game-final', function() {
     ctx.fillStyle = "white";
     ctx.fillRect(225,210,200,200);
     ctx.fillStyle = "red";
-    ctx.fillRect(ballX, 200, 50, 25);
+    ctx.fillRect(ballX, 100, 10, 10);
 
   }
 
