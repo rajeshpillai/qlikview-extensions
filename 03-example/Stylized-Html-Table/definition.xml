@@ -1,3 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <ExtensionObject Label="Stylized HTML Table">
+  <Text Label="Dimension Label:" Initial=""  Expression="Country" />
+  <Dimension Label="Country:" Initial="" DropTarget="Country"/>
+
+  <Text Label="Expression Label:" Initial="" Expression="Sales $" />
+  <Measurement Label="Sales Expr:" Initial=""  Expression="Sum(Sales)" />
 
 </ExtensionObject>

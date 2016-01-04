@@ -11,7 +11,7 @@
 }
 table.e-table  th {
   padding:21px 25px 22px 25px;
-  border-top:1px solid #fafafa;
+  border-top:1px solid #e0e0e0;
   border-bottom:1px solid #e0e0e0;
 
   background: #ededed;
@@ -76,6 +76,4 @@ table.e-table  tr:last-child td:last-child {
 
 table.e-table  tr:hover td {
   background: #f2f2f2;
-  background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
-  background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);
 }

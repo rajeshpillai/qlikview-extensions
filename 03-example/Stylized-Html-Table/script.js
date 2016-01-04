@@ -5,16 +5,23 @@ Qv.AddExtension("tekacademy/03-example/Stylized-Html-Table", function(){
 
   var base_path = "Extensions/tekacademy/03-example/Stylized-Html-Table/";
 
-  alert(JSON.stringify(self.Data.Rows));
+  //alert(JSON.stringify(self.Data.Rows));
 
   Qva.LoadCSS(base_path + "style.css");
 
-  var html = drawTable(self.Data.Rows);
+  var html = drawTable(self, self.Data.Rows);
   self.Element.innerHTML = html;
 });
 
-function drawTable(rows) {
-    var html = "<br><table class='e-table'>";
+function drawTable(self, rows) {
+    var html = "<table class='e-table'>";
+
+    var headstring = "<tr><th>{0}</th><th>{1}</th></tr>"
+
+    var dimLabel = self.Layout.Text0.text;
+    var exprLabel = self.Layout.Text1.text;
+
+    html += headstring.format(dimLabel, exprLabel);
 
     // Cycle Through the data
     for (var i = 0; i < rows.length; i++) {
@@ -27,4 +34,11 @@ function drawTable(rows) {
     // Finalise the html
     html += "</table>";
     return html;
-  }
+}
+
+String.prototype.format = function () {
+  // code from stackoverflow.com
+  var args = arguments;
+  return this.replace(/\{(\d+)\}/g,
+  function (m, n) { return args[n]; });
+};
