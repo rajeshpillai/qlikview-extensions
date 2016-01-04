@@ -19,7 +19,7 @@ Qv.AddExtension("tekacademy/03-example/Stylized-Html-Table", function(){
 });
 
 function drawTable(self, rows) {
-    var html = "<table class='e-table'>";
+    var html = "<div class='scroll'><table class='e-table'>";
 
     var headstring = "<tr><th>{0}</th><th>{1}</th></tr>"
 
@@ -30,6 +30,7 @@ function drawTable(self, rows) {
     html += headstring.format(dimLabel, exprLabel);
 
     // Cycle Through the data
+    html += "<tbody>";
     for (var i = 0; i < rows.length; i++) {
       // get the row
       var row = rows [i];
@@ -37,8 +38,10 @@ function drawTable(self, rows) {
       html += "<tr><td>" + row[0].text + "</td><td>" + row[1].text + "</td></tr>";
     }
 
+    html += "</tbody>";
+
     // Finalise the html
-    html += "</table>";
+    html += "</table></div>";
     return html;
 }
 

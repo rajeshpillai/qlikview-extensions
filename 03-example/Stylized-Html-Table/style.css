@@ -7,13 +7,12 @@
   background:#eaebec;
   margin:20px;
   border:#ccc 1px solid;
-
 }
+
 table.e-table  th {
   padding:21px 25px 22px 25px;
   border-top:1px solid #e0e0e0;
   border-bottom:1px solid #e0e0e0;
-
   background: #ededed;
 }
 
@@ -76,4 +75,12 @@ table.e-table  tr:last-child td:last-child {
 
 table.e-table  tr:hover td {
   background: #f2f2f2;
+}
+
+
+/* scrolling table */
+
+div.scroll {
+  height:350px;
+  overflow: auto;
 }

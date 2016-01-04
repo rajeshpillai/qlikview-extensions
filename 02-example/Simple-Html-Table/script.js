@@ -15,6 +15,6 @@ Qv.AddExtension("tekacademy/02-example/Simple-Html-Table", function(){
   // Finalise the html
   html += "</table>";
 
-    // Set the HTML
+  // Set the HTML
   this.Element.innerHTML = html;
 });
