@@ -3,11 +3,16 @@ Qv.AddExtension("tekacademy/03-example/Stylized-Html-Table", function(){
 
   var self = this;
 
+  var root_url = Qva.Remote + (Qva.Remote.indexOf('?') >= 0 ? '&' : '?') + 'public=only';
+
   var base_path = "Extensions/tekacademy/03-example/Stylized-Html-Table/";
 
   //alert(JSON.stringify(self.Data.Rows));
 
-  Qva.LoadCSS(base_path + "style.css");
+  //Qva.LoadCSS(base_path + "style.css");
+  var fullCSS = root_url +  "&name=" + base_path + "style.css";
+  //alert(fullCSS);
+  Qva.LoadCSS(fullCSS);
 
   var html = drawTable(self, self.Data.Rows);
   self.Element.innerHTML = html;
