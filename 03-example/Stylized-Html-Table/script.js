@@ -19,6 +19,7 @@ function drawTable(self, rows) {
     var headstring = "<tr><th>{0}</th><th>{1}</th></tr>"
 
     var dimLabel = self.Layout.Text0.text;
+
     var exprLabel = self.Layout.Text1.text;
 
     html += headstring.format(dimLabel, exprLabel);
@@ -40,5 +41,5 @@ String.prototype.format = function () {
   // code from stackoverflow.com
   var args = arguments;
   return this.replace(/\{(\d+)\}/g,
-  function (m, n) { return args[n]; });
+    function (m, n) { return args[n]; });
 };
