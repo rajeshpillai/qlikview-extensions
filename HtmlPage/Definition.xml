@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-	<ExtensionObject Label="QlikView Extensions Demo Page">
-	<Text Label="URL" Initial="" Expression="='about:blank'"/>
-</ExtensionObject>

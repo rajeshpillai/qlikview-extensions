@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ExtensionObject Label="QlikView HTML Table with Data">
-	<Dimension Initial="" /> 
-    <Measurement Initial="" /> 
-
-     <Initiate Name="Caption.Text" value="HTML Basic Table" /> 
-</ExtensionObject>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ExtensionObject Label="Tennis Game">
-	<Dimension Initial="" />
-	<Measurement  Initial=""/>
-	<Initiate Name="Caption.Text" Value="Game 2"/>
-</ExtensionObject>
