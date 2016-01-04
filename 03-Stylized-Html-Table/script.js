@@ -1,11 +1,11 @@
-Qv.AddExtension("tekacademy/03-example/Stylized-Html-Table", function(){
+Qv.AddExtension("tekacademy/03-Stylized-Html-Table", function(){
   // Inside the extension "this" points to the extension object
 
   var self = this;
 
   var root_url = Qva.Remote + (Qva.Remote.indexOf('?') >= 0 ? '&' : '?') + 'public=only';
 
-  var base_path = "Extensions/tekacademy/03-example/Stylized-Html-Table/";
+  var base_path = "Extensions/tekacademy/03-Stylized-Html-Table/";
 
   //alert(JSON.stringify(self.Data.Rows));
 

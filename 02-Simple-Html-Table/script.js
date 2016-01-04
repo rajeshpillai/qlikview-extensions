@@ -1,4 +1,4 @@
-Qv.AddExtension("tekacademy/02-example/Simple-Html-Table", function(){
+Qv.AddExtension("tekacademy/02-Simple-Html-Table", function(){
   // Inside the extension "this" points to the extension object
   var html = "<table border='1'>";
 
